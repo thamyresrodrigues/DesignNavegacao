@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Design Navegacao</string>
+
+    <string name="home_string">Home</string>
+
+    <string name="info_string">Info</string>
+
+    <string name="nav_string">Nav</string>
+
+    <string name= "home">Você está no Infnet!</string >
+
+</resources>
