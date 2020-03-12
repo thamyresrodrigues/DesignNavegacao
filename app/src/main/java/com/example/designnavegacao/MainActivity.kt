@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,10 +24,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected (item: MenuItem): Boolean {
         when (item.itemId){
-            R.id.home_item -> Toast.makeText(
-                this ,
-                R.string.home,
-                Toast.LENGTH_LONG).show()
+            R.id.home_item ->{
+                nav_fragment.findNavController().navigate(R.id.homeFragment)
+            }
+            R.id.info_item -> {
+                Toast.makeText( this ,
+                    R.string.informacao,
+                    Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_item ->{
+                nav_fragment.findNavController().navigate(R.id.dateFragment)
+            }
         }
         return true
     }

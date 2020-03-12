@@ -16,6 +16,6 @@
         android:title= "@string/nav_string"
         android:orderInCategory= "100"
         android:icon= "@drawable/ic_navigation_black_24dp"
-        app:showAsAction= "never" />
+        app:showAsAction= "ifRoom" />
 
 </menu>
